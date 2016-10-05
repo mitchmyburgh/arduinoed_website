@@ -21,14 +21,28 @@ body {
   .navbar-brand {
     font-family: 'Roboto Slab', serif;
     font-weight: 1000;
-    font-size: 36px;
+    font-size: 32px;
     color: white;
+    display: inline-block;
+    margin-top: -2px;
+    .material-icons {
+      font-size: 36px;
+      display: inline-flex;
+      vertical-align: middle;
+      margin-top: -7px;
+    }
   }
   .navbar-collapse {
     font-family: 'Roboto Slab', serif;
     font-weight: 1000;
     font-size: 24px;
     color: white;
+  }
+  .navbar-nav > li > a {
+    color: white;
+  }
+  .navbar-nav > li > a:hover {
+    background: black;
   }
 }
 
@@ -50,4 +64,30 @@ body {
     width: 100%;
     height: auto;
   }
+}
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+/* body */
+.container {
+  .data_col {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    .material-icons {
+      font-size: 200px;
+      color: $green;
+    }
+    .material-icons:hover {
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      font-size: 215px;
+      margin: -15px;
+    }
+  }
+
 }

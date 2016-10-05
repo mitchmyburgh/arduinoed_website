@@ -54,10 +54,10 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', () => {
-		var watcher = gulp.watch('src/**', ['html', 'js', 'css', 'bower', 'img']);
+		var watcher = gulp.watch(['src/**/*.ejs', 'src/**/*.scss', 'src/**/*.js'], ['html', 'js', 'css', 'img', 'bower']);
 		watcher.on('change', (event) => {
 			console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
 		});
 });
 
-gulp.task('default', ['html', 'js', 'css', 'bower', 'img', 'connect', 'watch']);
+gulp.task('default', ['html', 'js', 'css', 'img', 'bower', 'connect', 'watch']);
