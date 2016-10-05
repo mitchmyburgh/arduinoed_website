@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/mitchmyburgh/arduinoed_website#readme",
   "dependencies": {
+    "bower-installer": "1.2.0",
     "gulp": "3.9.1",
     "gulp-connect": "5.0.0",
+    "gulp-ejs": "2.2.1",
     "gulp-htmlmin": "3.0.0",
     "gulp-minify": "0.0.14",
     "gulp-sass": "2.3.2"

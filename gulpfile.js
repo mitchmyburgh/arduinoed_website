@@ -3,9 +3,11 @@ var htmlmin = require('gulp-htmlmin');
 var minify = require('gulp-minify');
 var sass = require('gulp-sass');
 var connect = require('gulp-connect');
+var ejs = require('gulp-ejs');
 
 gulp.task('html', () => {
-	gulp.src('src/html/**/*.html')
+	gulp.src('src/html/**/*.ejs')
+		.pipe(ejs({}, {ext:'.html'}))
 		.pipe(htmlmin({
 			collapseWhitespace: true,
 			minifyCSS: true,

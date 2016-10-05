@@ -1,0 +1,53 @@
+@import 'variables';
+
+/* Fonts */
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:700';
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: $header_height;
+  padding-bottom: 20px;
+}
+
+/* Header */
+.navbar {
+  background: $green;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+  border: 0;
+  min-height: $header_height;
+  .navbar-brand {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 1000;
+    font-size: 36px;
+    color: white;
+  }
+  .navbar-collapse {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 1000;
+    font-size: 24px;
+    color: white;
+  }
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: $green;
+  p,h1 {
+    color: white;
+  }
+  h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 1000;
+    font-size: 48px;
+  }
+  p {
+    font-family: 'Roboto Slab', serif;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
