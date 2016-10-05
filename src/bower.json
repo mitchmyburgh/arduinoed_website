@@ -1,0 +1,17 @@
+{
+  "name": "arduino_ed",
+  "homepage": "https://github.com/mitchmyburgh/arduinoed_website",
+  "authors": [
+    "Mitch Myburgh <mitchmyburgh@gmail.com>"
+  ],
+  "description": "arduinoed website",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

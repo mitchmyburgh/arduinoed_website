@@ -1,0 +1,26 @@
+{
+  "name": "ardiiunoed",
+  "version": "0.0.1",
+  "description": "Arduinoed website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchmyburgh/arduinoed_website.git"
+  },
+  "author": "Mitch Myburgh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mitchmyburgh/arduinoed_website/issues"
+  },
+  "homepage": "https://github.com/mitchmyburgh/arduinoed_website#readme",
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-connect": "5.0.0",
+    "gulp-htmlmin": "3.0.0",
+    "gulp-minify": "0.0.14",
+    "gulp-sass": "2.3.2"
+  }
+}
