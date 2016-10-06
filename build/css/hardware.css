@@ -87,3 +87,6 @@ body {
 .data_col img {
   width: 90%;
   height: auto; }
+
+.data_col .btn .fa-file-pdf-o {
+  color: #D32F2F; }

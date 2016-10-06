@@ -36,4 +36,9 @@
     width: 90%;
     height: auto;
   }
+  .btn {
+    .fa-file-pdf-o {
+      color: $pdf_red;
+    }
+  }
 }

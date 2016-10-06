@@ -95,6 +95,10 @@ gulp.task('img', () => {
 	gulp.src('src/img/**/*')
 		.pipe(gulp.dest('build/img'));
 });
+gulp.task('pdf', () => {
+	gulp.src('src/pdf/**/*')
+		.pipe(gulp.dest('build/pdf'));
+});
 
 gulp.task('connect', function() {
   connect.server({
@@ -104,10 +108,10 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', () => {
-		var watcher = gulp.watch(['src/**/*.ejs', 'src/**/*.scss', 'src/**/*.js'], ['html', 'js', 'css', 'img', 'bower']);
+		var watcher = gulp.watch(['src/**/*.ejs', 'src/**/*.scss', 'src/**/*.js'], ['html', 'js', 'css', 'img', 'pdf', 'bower']);
 		watcher.on('change', (event) => {
 			console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
 		});
 });
 
-gulp.task('default', ['html', 'js', 'css', 'img', 'bower', 'connect', 'watch']);
+gulp.task('default', ['html', 'js', 'css', 'img', 'pdf', 'bower', 'connect', 'watch']);
