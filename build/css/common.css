@@ -54,3 +54,10 @@ body {
   .jumbotron img {
     width: 100%;
     height: auto; }
+
+.vr {
+  padding-right: 20px;
+  border-right: 1px solid #ccc; }
+
+.moti {
+  text-align: right; }

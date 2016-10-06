@@ -55,6 +55,13 @@ body {
     width: 100%;
     height: auto; }
 
+.vr {
+  padding-right: 20px;
+  border-right: 1px solid #ccc; }
+
+.moti {
+  text-align: right; }
+
 /* body */
 .container .data_col {
   text-align: center;
@@ -68,3 +75,36 @@ body {
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     color: #00796B; }
+
+.info_col .material-icons {
+  display: inline-block;
+  font-size: 48px;
+  color: #009688;
+  vertical-align: middle;
+  text-align: center; }
+
+.info_col .material-icons:hover {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  color: #00796B; }
+
+.info_col h2 {
+  padding-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin-top: 5px; }
+
+.info_col p, .info_col ol {
+  font-family: 'Roboto Slab', serif; }
+
+.info_col img {
+  width: 90%;
+  height: auto; }
+
+.info_col .btn .fa-file-pdf-o {
+  color: #D32F2F; }

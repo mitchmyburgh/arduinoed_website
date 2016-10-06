@@ -55,6 +55,13 @@ body {
     width: 100%;
     height: auto; }
 
+.vr {
+  padding-right: 20px;
+  border-right: 1px solid #ccc; }
+
+.moti {
+  text-align: right; }
+
 .jumbotron .material-icons {
   display: inline-block;
   font-size: 90px;
@@ -73,15 +80,23 @@ body {
   vertical-align: middle;
   text-align: center; }
 
+.data_col .material-icons:hover {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  color: #00796B; }
+
 .data_col h2 {
   padding-left: 20px;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   font-family: 'Roboto Slab', serif;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-top: 5px; }
 
-.data_col p, .data_col ol {
+.data_col p, .data_col ol, .data_col h3 {
   font-family: 'Roboto Slab', serif; }
 
 .data_col img {
