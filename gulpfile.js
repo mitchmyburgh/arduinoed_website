@@ -41,7 +41,31 @@ gulp.task('html_software', () => {
 		.pipe(gulp.dest('build/'));
 });
 
-gulp.task('html', ['html_home', 'html_hardware', 'html_software']);
+gulp.task('html_framework', () => {
+	gulp.src('src/html/**/framework.ejs')
+		.pipe(ejs({page: 'Framework'}, {ext:'.html'}))
+		.pipe(htmlmin({
+			collapseWhitespace: true,
+			minifyCSS: true,
+			minifyJS: true,
+			removeComments: true
+		}))
+		.pipe(gulp.dest('build/'));
+});
+
+gulp.task('html_report', () => {
+	gulp.src('src/html/**/report.ejs')
+		.pipe(ejs({page: 'Report'}, {ext:'.html'}))
+		.pipe(htmlmin({
+			collapseWhitespace: true,
+			minifyCSS: true,
+			minifyJS: true,
+			removeComments: true
+		}))
+		.pipe(gulp.dest('build/'));
+});
+
+gulp.task('html', ['html_home', 'html_hardware', 'html_software', 'html_framework', 'html_report']);
 
 gulp.task('js', () => {
 	gulp.src('src/js/**/*.js')
