@@ -54,17 +54,3 @@ body {
   .jumbotron img {
     width: 100%;
     height: auto; }
-
-/* body */
-.container .data_col {
-  text-align: center;
-  font-family: 'Roboto Slab', serif; }
-  .container .data_col .material-icons {
-    font-size: 200px;
-    color: #009688; }
-  .container .data_col .material-icons:hover {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    color: #00796B; }
