@@ -6,7 +6,7 @@
     text-align: center;
     font-family: 'Roboto Slab', serif;
     .material-icons {
-      font-size: 200px;
+      font-size: 100px;
       color: $green;
     }
     .material-icons:hover {
@@ -56,4 +56,10 @@
       color: $pdf_red;
     }
   }
+}
+.links {
+  h2 {
+    color: black
+  }
+  
 }

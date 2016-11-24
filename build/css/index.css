@@ -58,8 +58,16 @@ body {
 .vr {
   padding-right: 20px;
   border-right: 1px solid #ccc; }
+  .vr h2.title {
+    display: inline-block; }
+  .vr h3.title {
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding-left: 20px; }
 
-.moti {
+.right {
   text-align: right; }
 
 /* body */
@@ -67,7 +75,7 @@ body {
   text-align: center;
   font-family: 'Roboto Slab', serif; }
   .container .data_col .material-icons {
-    font-size: 200px;
+    font-size: 100px;
     color: #009688; }
   .container .data_col .material-icons:hover {
     -webkit-transition: all 0.3s ease;
@@ -108,3 +116,6 @@ body {
 
 .info_col .btn .fa-file-pdf-o {
   color: #D32F2F; }
+
+.links h2 {
+  color: black; }
